@@ -16,5 +16,5 @@ for part in partitions:
         continue
     disk = psutil.disk_usage(mnt)
     print(f"Usage at {mnt} on {part.device}: {disk.used // (1024 ** 3)} GB")
-    print(f"Free at {mnt} on {part.device}: {disk.free // (1024 ** 3)}GB")
-    print(f"Total at {mnt} on {part.device}: {disk.total // (1024 ** 3)}GB")
+    print(f"Free at {mnt} on {part.device}: {disk.free // (1024 ** 3)} GB")
+    print(f"Total at {mnt} on {part.device}: {disk.total // (1024 ** 3)} GB")
