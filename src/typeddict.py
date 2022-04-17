@@ -1,5 +1,4 @@
-from mypy_extensions import TypedDict
-from typing import Dict, List, Union
+from typing import Dict, List, TypedDict, Union
 
 my_dict: Dict[str, Union[List[str], str]] = {
     "key_1": "val_1",
